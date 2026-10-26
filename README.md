@@ -25,10 +25,9 @@ Ekip içi görev dağılımımız ve sorumluluklarımız aşağıdadır:
 [Rümeysa BİLGİÇ]:Paket sınıfı +Paket işlemleri + Paket sınıfı JavaFX tasarımı + TXT Entegrasyonu + hash veri yapısı
 
 ## 5. Proje İşlevleri ve Kullanılacak Veri Yapıları
-* **Aktif Aboneliklerin Tutulması:** Bağlı liste veri yapısı  
+Aktif Aboneliklerin Tutulması: Bağlı liste veri yapısı  
 
-
-* **Süresi Yaklaşan Ödemelerin Listelenmesi:**Yığın liste veri yapısı 
+Süresi Yaklaşan Ödemelerin Listelenmesi:Yığın liste veri yapısı 
 
 
 
