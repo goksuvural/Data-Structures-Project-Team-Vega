@@ -30,7 +30,7 @@ Ekip içi görev dağılımımız ve sorumluluklarımız aşağıdadır:
 
 * **Süresi Yaklaşan Ödemelerin Listelenmesi:**Yığın liste veri yapısı 
 
-## 6. Sınıf Taslakları ve UML Diyagramı aşağıdadır:
+
 
 
 
