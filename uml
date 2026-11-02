@@ -1,1 +1,140 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Düzenli UML" id="0">
+    <mxGraphModel dx="3979" dy="1060" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p_model" parent="1" style="swimlane;html=1;rounded=1;horizontal=0;startSize=28;fillColor=#f5f5f5;strokeColor=#999999;fontSize=14;fontStyle=1;align=left;spacingLeft=10;" value="&lt;b&gt;MODEL SINIFLARI&lt;/b&gt;" vertex="1">
+          <mxGeometry height="275" width="1490" x="35" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="p_ds" parent="1" style="swimlane;html=1;rounded=1;horizontal=0;startSize=0;fillColor=#f5f5f5;strokeColor=#999999;fontSize=14;fontStyle=1;align=left;spacingLeft=10;" value="&lt;b&gt;KENDİ TASARLADIĞINIZ VERİ YAPILARI&lt;/b&gt;" vertex="1">
+          <mxGeometry height="317" width="1520" y="373" as="geometry" />
+        </mxCell>
+        <mxCell id="OdemeHeap" parent="p_ds" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;fontSize=12;strokeWidth=1;" value="&lt;b&gt;OdemeHeap&lt;/b&gt;&lt;hr/&gt;- OdemeKaydi[] heap&lt;br/&gt;- int boyut&lt;br/&gt;- int kapasite&lt;hr/&gt;+ void ekle(OdemeKaydi)&lt;br/&gt;+ OdemeKaydi cikar()&lt;br/&gt;+ OdemeKaydi enYakinOdemeyiGetir()&lt;br/&gt;+ void heapifyUp()&lt;br/&gt;+ void heapifyDown()" vertex="1">
+          <mxGeometry height="215" width="320" x="825" y="57" as="geometry" />
+        </mxCell>
+        <mxCell id="OdemeListesi" parent="p_ds" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;fontSize=12;strokeWidth=1;" value="&lt;b&gt;OdemeListesi&lt;/b&gt;&lt;hr/&gt;- OdemeNode ilk&lt;br/&gt;- OdemeNode son&lt;br/&gt;- int elemanSayisi&lt;hr/&gt;+ void ekle(OdemeKaydi)&lt;br/&gt;+ void sil(int)&lt;br/&gt;+ OdemeKaydi ara(int)&lt;br/&gt;+ void guncelle(int, OdemeKaydi)&lt;br/&gt;+ void tarihSirala()&lt;br/&gt;+ void tutarSirala()" vertex="1">
+          <mxGeometry height="190" width="300" x="455" y="117" as="geometry" />
+        </mxCell>
+        <mxCell id="p_service" parent="1" style="swimlane;html=1;rounded=1;horizontal=0;startSize=28;fillColor=#f5f5f5;strokeColor=#999999;fontSize=14;fontStyle=1;align=left;spacingLeft=10;" value="&lt;b&gt;YÖNETİM / DOSYA / JAVAFX&lt;/b&gt;" vertex="1">
+          <mxGeometry height="365" width="1550" x="-50" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="r16" edge="1" parent="p_service" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" value="kullanır">
+          <mxGeometry relative="1" x="0.0577" as="geometry">
+            <Array as="points">
+              <mxPoint x="945" y="297.5" />
+              <mxPoint x="945" y="152.5" />
+            </Array>
+            <mxPoint x="1270" y="297.5" as="sourcePoint" />
+            <mxPoint x="895.0000000000005" y="152.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AnaSayfaController" parent="p_service" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;fontSize=12;strokeWidth=1;" value="&lt;b&gt;AnaSayfaController&lt;/b&gt;&lt;hr/&gt;&lt;hr/&gt;+ void anaSayfayiGoster()" vertex="1">
+          <mxGeometry height="125" width="250" x="920" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OdemeController" parent="p_service" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;fontSize=12;strokeWidth=1;" value="&lt;b&gt;OdemeController&lt;/b&gt;&lt;hr/&gt;&lt;hr/&gt;+ void odemeleriGoster()&lt;br/&gt;+ void odemeEkle()&lt;br/&gt;+ void odemeSil()&lt;br/&gt;+ void odemeGuncelle()&lt;br/&gt;+ void yaklasanOdemeleriGoster()" vertex="1">
+          <mxGeometry height="165" width="270" x="1280" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="AbonelikController" parent="p_service" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;fontSize=12;strokeWidth=1;" value="&lt;b&gt;AbonelikController&lt;/b&gt;&lt;hr/&gt;&lt;hr/&gt;+ void abonelikleriGoster()&lt;br/&gt;+ void abonelikEkle()&lt;br/&gt;+ void abonelikSil()&lt;br/&gt;+ void abonelikGuncelle()" vertex="1">
+          <mxGeometry height="150" width="270" x="1240" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="r11" edge="1" parent="p_service" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" value="yönetir">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="830" y="165" as="sourcePoint" />
+            <mxPoint x="1440" y="-56.299999999999955" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kullanici" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;fontSize=12;strokeWidth=1;" value="&lt;b&gt;Kullanici&lt;/b&gt;&lt;hr/&gt;- String kullaniciAdi&lt;br/&gt;- String sifre&lt;hr/&gt;+ boolean girisYap()&lt;br/&gt;+ void sifremiUnuttum()" vertex="1">
+          <mxGeometry height="150" width="260" x="95" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="Abonelik" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;fontSize=12;strokeWidth=1;" value="&lt;b&gt;Abonelik&lt;/b&gt;&lt;hr/&gt;- int abonelikId&lt;br/&gt;- String hizmetAdi&lt;br/&gt;- String aciklama&lt;hr/&gt;+ void abonelikKaydet()&lt;br/&gt;+ void abonelikSil()&lt;br/&gt;+ void abonelikGuncelle(String aciklama)" vertex="1">
+          <mxGeometry height="180" width="300" x="500" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="OdemeKaydi" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;fontSize=12;strokeWidth=1;" value="&lt;b&gt;OdemeKaydi&lt;/b&gt;&lt;hr/&gt;- int odemeId&lt;br/&gt;- int abonelikId&lt;br/&gt;- String donem&lt;br/&gt;- double ucret&lt;br/&gt;- LocalDate sonOdemeTarihi&lt;br/&gt;- LocalDate odemeTarihi&lt;br/&gt;- boolean odendiMi&lt;hr/&gt;+ void odemeKaydet()&lt;br/&gt;+ void odemeSil()&lt;br/&gt;+ void odemeGuncelle(double, LocalDate, boolean)" vertex="1">
+          <mxGeometry height="215" width="350" x="970" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7K88GOUxgQypLRMCu0tT-2" edge="1" parent="1" source="AbonelikDizisi" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;defaultLabelBackgroundColor=page;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AbonelikDizisi" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;fontSize=12;strokeWidth=1;" value="&lt;b&gt;AbonelikDizisi&lt;/b&gt;&lt;hr/&gt;- Abonelik[] dizi&lt;br/&gt;- int elemanSayisi&lt;br/&gt;- int kapasite&lt;hr/&gt;+ void ekle(Abonelik)&lt;br/&gt;+ void sil(int)&lt;br/&gt;+ Abonelik getir(int)&lt;br/&gt;+ void guncelle(int, Abonelik)&lt;br/&gt;+ int boyut()&lt;br/&gt;+ void kapasiteArtir()" vertex="1">
+          <mxGeometry height="227.5" width="320" x="70" y="447.5" as="geometry" />
+        </mxCell>
+        <mxCell id="OdemeNode" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;fontSize=12;strokeWidth=1;" value="&lt;b&gt;OdemeNode&lt;/b&gt;&lt;hr/&gt;- OdemeKaydi veri&lt;br/&gt;- OdemeNode onceki&lt;br/&gt;- OdemeNode sonraki" vertex="1">
+          <mxGeometry height="85" width="245" x="455" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="HashNode" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;fontSize=12;strokeWidth=1;" value="&lt;b&gt;HashNode&lt;/b&gt;&lt;hr/&gt;- String anahtar&lt;br/&gt;- OdemeKaydi veri&lt;br/&gt;- HashNode sonraki" vertex="1">
+          <mxGeometry height="100" width="245" x="1210" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="OdemeHashTablosu" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;fontSize=12;strokeWidth=1;" value="&lt;b&gt;OdemeHashTablosu&lt;/b&gt;&lt;hr/&gt;- HashNode[] tablo&lt;br/&gt;- int kapasite&lt;hr/&gt;+ int hash(String)&lt;br/&gt;+ void ekle(String, OdemeKaydi)&lt;br/&gt;+ OdemeKaydi getir(String)&lt;br/&gt;+ boolean varMi(String)&lt;br/&gt;+ void sil(String)&lt;br/&gt;+ boolean ayniDonemKontrol(String, String)" vertex="1">
+          <mxGeometry height="165" width="330" x="1170" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="DosyaIslemleri" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;fontSize=12;strokeWidth=1;" value="&lt;b&gt;DosyaIslemleri&lt;/b&gt;&lt;hr/&gt;&lt;hr/&gt;+ Abonelik[] abonelikleriOku()&lt;br/&gt;+ void abonelikKaydet(Abonelik)&lt;br/&gt;+ void abonelikSil(int)&lt;br/&gt;+ OdemeKaydi[] odemeleriOku()&lt;br/&gt;+ void odemeKaydet(OdemeKaydi)&lt;br/&gt;+ void odemeSil(int)" vertex="1">
+          <mxGeometry height="275" width="290" x="20" y="792.5" as="geometry" />
+        </mxCell>
+        <mxCell id="OdemeYonetici" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=6;spacingLeft=6;fontSize=12;strokeWidth=1;" value="&lt;b&gt;OdemeYonetici&lt;/b&gt;&lt;hr/&gt;- OdemeListesi odemeListesi&lt;br/&gt;- OdemeHeap odemeHeap&lt;br/&gt;- OdemeHashTablosu hashTablosu&lt;hr/&gt;+ OdemeKaydi[] yaklasanOdemeleriGetir()&lt;br/&gt;+ OdemeKaydi[] tamamlananOdemeleriGetir()&lt;br/&gt;+ double toplamGiderHesapla(String)&lt;br/&gt;+ void odemeEkle(OdemeKaydi)&lt;br/&gt;+ void odemeSil(int)&lt;br/&gt;+ void odemeGuncelle(OdemeKaydi)&lt;br/&gt;+ OdemeKaydi[] odemeAra(String)" vertex="1">
+          <mxGeometry height="267.5" width="350" x="380" y="792.5" as="geometry" />
+        </mxCell>
+        <mxCell id="r1" edge="1" parent="1" source="Kullanici" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="Abonelik" value="sahip olur">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" edge="1" parent="1" source="Abonelik" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="OdemeKaydi" value="ödeme kayıtları">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r3" edge="1" parent="1" source="AbonelikDizisi" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamond;endFill=1;" target="Abonelik" value="tutar">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r4" edge="1" parent="1" source="OdemeListesi" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamond;endFill=1;" target="OdemeNode" value="içerir">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r5" edge="1" parent="1" source="OdemeNode" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="OdemeKaydi" value="tutar">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r6" edge="1" parent="1" source="OdemeHeap" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamond;endFill=1;" target="OdemeKaydi" value="içerir">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r7" edge="1" parent="1" source="OdemeHashTablosu" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamond;endFill=1;" target="HashNode" value="içerir">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r8" edge="1" parent="1" source="HashNode" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="OdemeKaydi" value="tutar">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r9" edge="1" parent="1" source="OdemeYonetici" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="OdemeListesi" value="yönetir">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r10" edge="1" parent="1" source="OdemeYonetici" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;exitX=0.818;exitY=-0.025;exitDx=0;exitDy=0;exitPerimeter=0;" target="OdemeHeap" value="yönetir">
+          <mxGeometry relative="1" x="-0.3926" as="geometry" />
+        </mxCell>
+        <mxCell id="r12" edge="1" parent="1" source="DosyaIslemleri" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;" target="Abonelik" value="okur/yazar">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r13" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;" value="okur/yazar">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="1020" as="sourcePoint" />
+            <mxPoint x="1145" y="375" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r14" edge="1" parent="1" source="AnaSayfaController" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="OdemeYonetici" value="kullanır">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r15" edge="1" parent="1" source="AbonelikController" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="AbonelikDizisi" value="kullanır">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="note1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=center;verticalAlign=middle;fontSize=12;" value="&lt;b&gt;KİŞİ 1  •  JavaFX + AbonelikDizisi&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="320" x="70" y="335" as="geometry" />
+        </mxCell>
+        <mxCell id="note2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=center;verticalAlign=middle;fontSize=12;" value="&lt;b&gt;KİŞİ 2  •  Ödeme Geçmişi + Çift Yönlü Bağlı Liste&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="340" x="430" y="335" as="geometry" />
+        </mxCell>
+        <mxCell id="note3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=center;verticalAlign=middle;fontSize=12;" value="&lt;b&gt;KİŞİ 3  •  Yaklaşan Ödemeler + Min-Heap&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="330" x="810" y="335" as="geometry" />
+        </mxCell>
+        <mxCell id="note4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=center;verticalAlign=middle;fontSize=12;" value="&lt;b&gt;KİŞİ 4  •  Arama / Tekrar Kontrolü + Hash Tablosu&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="350" x="1170" y="335" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
 
