@@ -13,24 +13,21 @@ Bu proje; kullanıcıların Netflix, Spotify, YouTube, ChatGPT ve benzeri düzen
 
 ## 3. Kullanılan Teknolojiler
 Programlama Dili:Java
-Arayüz (GUI): JavaFX  
-Veri Saklama:** Text Dosyası (.txt) ve Bellek (RAıfı JavaFx tasarımı + TXT Entegrasyonu + Hash tablosu
+Arayüz (GUI): Java Swing
+Veri Saklama:** Text Dosyası (.txt) 
 
 
 ## 4. İş Bölümü (Task Division)
 Ekip içi görev dağılımımız ve sorumluluklarımız aşağıdadır:
-[Göksu VURAL]:Finans Sınıfı + Fatura ve Ödeme işlemleri + Finans sınıfı Java Fx tasarımı + TXT Entegrasyonu + Tek yönlü Bağıl liste veri yapısı
-[Aslı HAMAMCI]:Müşteri Sınıfı+ Müşteri sınıfı JavaFx tasarımı + TXT Entegrasyonu + İkili arama ağacı
-[Zeynep Rana AŞÇI]:Abonelik sınıfı + Abonelik işlemleri + Abonelik JavaFX tasarımı + TXT Entegrasyonu + Ağaç veri yapısı
-[Rümeysa BİLGİÇ]:Paket sınıfı +Paket işlemleri + Paket sınıfı JavaFX tasarımı + TXT Entegrasyonu + hash veri yapısı
-
+[Göksu VURAL]:Yaklaşan Ödemeler Sayfası + Ödeme tarihlerinin sıralanması + TXT Entegrasyonu + Kendi Tasarladığı Min-Heap veri yapısı
+[Aslı HAMAMCI]:Ödeme Geçmişi sayfası + Ödeme Kayıtlarının İşlemleri + TXT Entegrasyonu + Kendi Tasarladığı Hash Tablosu
+[Zeynep Rana AŞÇI]: Abonelikler sayfası sınıfının tasarımı + Abonelik işlemleri +  Çift yönlü bağlı liste veri yapısı
+[Rümeysa BİLGİÇ]: Ana sayfa sınıfı tasarımı + Abonelikleri tutma ve listeleme + TXT  Entegrasyonu + Dinamik dizi veri yapısı 
 ## 5. Proje İşlevleri ve Kullanılacak Veri Yapıları
-Aktif Aboneliklerin Tutulması: Bağlı liste veri yapısı  
-
-Süresi Yaklaşan Ödemelerin Listelenmesi:Yığın liste veri yapısı 
-
-
-
-
+Dinamik Dizi Veri Yapısı: Abonelikleri tutma, listeleme ve kapasite arttırma işlemleri için kullanacağız.
+Çift Yönlü Bağlı Liste: Abonelik ekleme, silme, arama, güncelleme ve ileri-geri dolaşma işlemleri için kullanacağız.
+Hash Tablosu: Ödeme ekleme, silme ,güncelleme, tarihe ve tutara göre sıralama,yinelenen ödeme kaydını engelleme işlemleri için kullanacağız.
+Min-Heap: Yaklaşan Ödemelerin Listesi, Ödeme yapıldı durumunu güncelleme, gecikmiş ödemeleri gösterme işlemleri için kullanacağız.
+ 
 
 
