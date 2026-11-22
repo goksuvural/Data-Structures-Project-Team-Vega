@@ -1,4 +1,4 @@
-# Ortak Kanal
+# ORTAK SÖZLEŞME
 
 Bu dosyayı sadece proje lideri değiştirir. Değişiklik gerekirse Issue açılır.
 
