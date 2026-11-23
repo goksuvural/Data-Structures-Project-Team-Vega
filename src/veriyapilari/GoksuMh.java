@@ -2,7 +2,7 @@ package veriyapilari;
 
 import model.Abonelik;
 
-public class MinHeap {
+public class GoksuMh {
     private Abonelik[] dizi;
     private int boyut;
 
